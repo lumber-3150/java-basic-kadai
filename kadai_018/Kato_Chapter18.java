@@ -14,9 +14,12 @@ abstract public class Kato_Chapter18 {
 		System.out.println("住所は" + address +"です");
 		}
 	
+	abstract public void setGivenName();
 	abstract public void eachIntroduce();
 	
-	public void execIntriduce() {
+	public void execIntroduce() {
+		setGivenName();
 		commonIntroduce();
+		eachIntroduce();
 	}
 }
